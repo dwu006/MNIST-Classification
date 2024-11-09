@@ -19,7 +19,7 @@ import matplotlib.pyplot as plt
 
 #The line below gets the dataset and downloads it into the specified path
 transform = torchvision.transforms.Compose([torchvision.transforms.ToTensor()])
-dataset = torchvision.datasets.MNIST('PATH_FOR_TRAINING_SET', download=True, train=True, transform=transform) 
+dataset = torchvision.datasets.MNIST('./data', download=True, train=True, transform=transform) 
 # consider how to separate this into multiple datasets
 
 #PyTorch uses dataloaders which you can learn about here: https://pytorch.org/tutorials/beginner/basics/data_tutorial.html
